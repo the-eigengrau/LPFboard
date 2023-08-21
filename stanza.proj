@@ -1,0 +1,4 @@
+include "open-components-database/stanza.proj"
+package main defined-in "main.stanza"
+package helpers defined-in "helpers.stanza"
+package components/Samsung/CL21B154KBFNNNG defined-in "components/Samsung/CL21B154KBFNNNG.stanza"

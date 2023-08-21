@@ -1,0 +1,57 @@
+; This file is generated based on the parts database query below:")
+;   database-part(["manufacturer" => "Samsung", "mpn" => "CL21B154KBFNNNG"])
+#use-added-syntax(jitx)
+defpackage components/Samsung/CL21B154KBFNNNG :
+  import core
+  import jitx
+  import jitx/commands
+
+; This component has no symbol info from server. Please write your own and use assign-symbol()
+; This component has no land pattern from server. Please write your own and use assign-landpattern()
+
+pcb-landpattern lp :
+  layer(Silkscreen("F.SilkS", Top)) = Text(">REF", 0.5, C, loc(0.0, 0.0), "", TrueTypeFont, false, false)
+
+pcb-symbol sym-generated :
+  layer("value") = Text(">VALUE", 0.5, SW, loc(-1.0, 1.0), "", TrueTypeFont, false, false)
+  layer("reference") = Text(">REF", 0.5, SW, loc(-1.0, 1.5), "", TrueTypeFont, false, false)
+  layer("foreground") = Rectangle(2.0, 2.0)
+
+public pcb-component component :
+  name = "my-capacitor"
+  description = ""
+  manufacturer = "Samsung"
+  mpn = "CL21B154KBFNNNG"
+  emodel = Capacitor(1.5e-07, 0.1, 50.0, UNKNOWN, UNKNOWN, "X7R")
+  datasheet = "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B154KBFNNNG.jsp"
+  assign-landpattern(lp)
+  assign-symbol(sym-generated)
+
+  property(self.category) = "capacitor"
+  property(self.manufacturer) = "Samsung"
+  property(self.manufacturer_aliases) = ["Samsung" "Samsung Electro-Mechanics"]
+  property(self.mpn) = "CL21B154KBFNNNG"
+  property(self.mpn_aliases) = ["CL21B154KBFNNNG"]
+  property(self.cofactr_id) = "CCUB9I3NOMFY"
+  property(self.reference_prefix) = "C"
+  property(self.trust) = "low"
+  property(self.x) = 2.0
+  property(self.y) = 1.25
+  property(self.area) = 2.5
+  property(self.z) = 1.35
+  property(self.mounting) = "smd"
+  property(self.case) = "0805"
+  property(self.\|vendor_part_numbers.digi-key|) = "1276-6476-1-ND"
+  property(self.minimum_quantity) = 1
+  property(self.price) = 0.1
+  property(self.stock) = 205359
+  property(self.rated-temperature) = Toleranced(35.0, 90.0, 90.0)
+  property(self.capacitor) = true
+  property(self.capacitance) = 1.5e-07
+  property(self.type) = "ceramic"
+  property(self.rated_voltage) = 50.0
+  property(self.temperature-coefficent) = "X7R"
+  property(self.tolerance) = Toleranced(0.0, 0.1, 0.1)
+  property(self.\|metadata.packaging|) = "Cut Tape (CT)"
+  property(self.\|metadata.applications|) = "General Purpose"
+
